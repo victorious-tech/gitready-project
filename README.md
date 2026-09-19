@@ -1,2 +1,0 @@
-# gitready-project
-
