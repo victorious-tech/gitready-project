@@ -1,16 +1,133 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>BNCC</title>
+    <title>BNCC - Bina Nusantara Computer Club</title>
 </head>
 <body>
-    <Nav>
-        <a href="#">About Us</a>
-        <a href="#">Contacts</a>
-        <a href="#">Join</a>
-    </Nav>
+    <header>
+        <nav>
+            <a href="#" class="logo">BNCC<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#" class="btn-join">Join Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <h1>Selamat Datang di BNCC</h1>
+        <p>Bina Nusantara Computer Club adalah organisasi kemahasiswaan berbasis teknologi informasi yang siap mengembangkan potensi dan keahlian digitalmu.</p>
+    </main>
 </body>
 </html>
+
+```
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #1e293b;
+}
+
+header {
+    background: linear-gradient(135deg, #0056b3 0%, #002b66 100%);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #ffcc00;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-links a.btn-join {
+    background-color: #ffcc00;
+    color: #002b66;
+    font-weight: 700;
+    padding: 0.5rem 1.2rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(255, 204, 0, 0.4);
+}
+
+.nav-links a.btn-join:hover {
+    background-color: #ffe066;
+    color: #001a40;
+    transform: translateY(-2px);
+}
+
+.hero {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 3rem 2rem;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 86, 179, 0.08);
+    border-left: 6px solid #ffcc00;
+    text-align: center;
+}
+
+.hero h1 {
+    color: #0056b3;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    color: #475569;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
